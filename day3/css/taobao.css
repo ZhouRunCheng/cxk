@@ -1,0 +1,349 @@
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	width: 375px;
+	height: 37px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	background-color: #FF852A;
+	align-items: center;
+	z-index: 999;
+}
+
+.header .logo {
+	width: 43px;
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+	color: white;
+}
+
+.header .search {
+	width: 324px;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #FF4E22;
+	border-radius: 4px;
+	color: #F0E0DC;
+	font-family: h5index-iconfont;
+	font-size: 13px;
+}
+
+.main {
+	flex: 1;
+	width: 100%;
+	background-color: #efefef;
+}
+
+.main .swiper {
+	position: relative;
+	background-color: #fff;
+}
+
+.swiper-container {
+	width: 100%;
+}
+
+.main .swiper-container1 {
+	width: 375px;
+	height: 120px;
+	margin-top: 37px;
+}
+
+.main .swiper .swiper-container .swiper-wrapper .swiper-slide img {
+	width: 100%;
+}
+
+.main .swiper:after {
+	content: "";
+	width: 375px;
+	height: 120px;
+	position: absolute;
+	left: 0;
+	top: 111px;
+	background: url(../img/whitebar.webp);
+	background-size: 100%;
+	z-index: 9999;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: rgba(255, 80, 0);
+}
+
+.main .iconlist {
+	width: 375px;
+	height: 160px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	background-color: #fff;
+}
+
+.main .news {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	background-color: #fff;
+}
+
+.news .newsimg1 {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.news .newsimg1 img {
+	width: 35px;
+	height: 35px;
+}
+
+.news .newslist {
+	width: 317px;
+	background: url(../img/kaifei2.png), url(../img/kaifei1.png);
+	background-size: 85px 60px;
+	background-repeat: no-repeat;
+	background-position: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.newslist .listtop,
+.newslist .listbottom {
+	display: flex;
+	font-size: 12px;
+	margin: 3px 0;
+}
+
+.top-left {
+	color: rgb(230, 10, 31);
+	border: 1px solid rgb(230, 10, 31);
+	border-radius: 3px;
+	margin-right: 3px;
+}
+
+.top-right {
+	width: 200px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.iconitem {
+	width: 20%;
+	height: 67px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.iconitem .iconimg {
+	width: 61px;
+	height: 48px;
+}
+
+.iconimg img {
+	width: 100%;
+}
+
+.iconitem .icontext {
+	font-size: 11px;
+	margin-top: 5px;
+	text-align: center;
+	color: rgb(102, 102, 102);
+}
+
+.hotsell {
+	margin: 10px 0;
+	width: 100%;
+	height: 224px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.hotsell .hot-item {
+	width: 50%;
+	height: 112px;
+	background-color: #fff;
+	display: flex;
+}
+
+.hotsell .hot-item:first-child{
+	border-right: 1px solid rgba(0,0,0,.05);
+	border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.hotsell .hot-item:last-child{
+	border-top: 1px solid rgba(0,0,0,.05);
+	border-left: 1px solid rgba(0,0,0,.05);
+}
+
+.hotsell .hot-item img{
+	width: 100%;
+}
+
+.hotsell .hot-item div{
+	width: 50%;
+}
+
+.hotsell .hot-item .left{
+	display: flex;
+	flex-direction: column;
+}
+
+.hotsell .hot-item .left .top{
+	width: 250%;
+	height: 26px;
+}
+
+.hotsell .hot-item .left .bottom{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.hotsell .hot-item .left .bottom img{
+	width: 72px;
+	height: 58px;
+	margin-top: 20px;
+}
+
+.hotsell .hot-item .right{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.hotsell .hot-item .right img{
+	width: 79px;
+	height: 92.5px;
+	margin-top: 10px;
+}
+
+.live{
+	width: 100%;
+	height: 352.5px;
+	/* background-color: #000; */
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 100px;
+}
+
+.live-top{
+	width: 100%;
+	height: 125px;
+	display: flex;
+}
+
+.live-top .item-left{
+	width: 250px;
+	height: 135px;
+	position: relative;
+	background: url(../img/渐变黑.webp),url(../img/girl.jpg);
+	background-size: 250px 125px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+
+.live-top .item-left img:first-child{
+	width: 150%;
+	height: 29px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.live-top .item-right{
+	width: 125px;
+	height: 125px;
+}
+
+.live-top .item-right img{
+	width: 100%;
+	padding-top: 10px;
+}
+
+.live-mid{
+	width: 100%;
+	height: 180.5px;
+	padding-top: 10px;
+	display: flex;
+}
+
+.live-mid .item-box{
+	width: 125px;
+	height: 125px;
+}
+
+.live-mid .item-box img{
+	width: 100%;
+}
+
+.live-bottom{
+	width: 100%;
+	height: 36px;
+}
+
+.footer {
+	width: 100%;
+	z-index: 9999;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 43px;
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.footer .item {
+	text-align: center;
+}
+
+.footer .item .iconfont {
+	font-size: 22px;
+	color: #5D656B;
+}
+
+.footer .item .item-bottom {
+	font-size: 12px;
+	color: #5d656b;
+}

@@ -3,57 +3,275 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>弹性布局</title>
+		<meta name="viewport" content="width=375px,user-scalable=no" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css">
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_1137003_zpmrqf55e3m.css">
+		<link rel="stylesheet" href="node_modules/swiper/dist/css/swiper.css">
+		<link rel="stylesheet" href="css/taobao.css">
 	</head>
-	<style type="text/css">
-		*{
-			box-sizing: border-box;
-		}
-		body{
-			margin: 0;
-			padding: 0;
-		}
-		.container {
-			width: 1080px;
-			height: 790px;
-			margin: 0 auto;
-			display: flex;
-			flex-direction: column;
-		}
-		.header{
-			width: 100%;
-			height: 43px;
-			background-color: red;
-		}
-		.main{
-			flex: 1;
-			width: 100%;
-			height: 500px;
-			background-color: yellow;
-			display: flex;
-		}
-		.footer{		
-			width: 100%;
-			height: 80px;
-			align-self: flex-end;
-			background-color: steelblue;
-		}
-		.left{
-			flex: 3;
-			background-color: orange;
-		}
-		.right{
-			flex: 1;
-			background-color: skyblue;
-		}
-	</style>
 	<body>
 		<div class="container">
-			<div class="header"></div>
-			<div class="main">
-				<div class="left"></div>
-				<div class="right"></div>
+			<div class="header">
+				<div class="logo iconfont icon-taobao"></div>
+				<a class="search" href="#">
+					<div class="iconfont icon-xiazai17"></div>
+					<span>寻找宝贝店铺</span>
+				</a>
 			</div>
-			<div class="footer"></div>	
+			<div class="main">
+				<div class="swiper">
+					<div class="swiper-container swiper-container1">
+							<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="img/1.jpg" ></div>
+									<div class="swiper-slide"><img src="img/2.jpg" ></div>
+									<div class="swiper-slide"><img src="img/3.jpg" ></div>
+							</div>
+							<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<div class="iconlist">
+					<div class="iconitem">
+						<div class="iconimg">
+							<img src="img/diqian.png" >
+						</div>
+						<div class="icontext">hahaha</div>
+					</div>
+					<div class="iconitem">
+						<div class="iconimg">
+							<img src="img/diqian.png" >
+						</div>
+						<div class="icontext">hahaha</div>
+					</div>
+					<div class="iconitem">
+						<div class="iconimg">
+							<img src="img/diqian.png" >
+						</div>
+						<div class="icontext">hahaha</div>
+					</div>
+					<div class="iconitem">
+						<div class="iconimg">
+							<img src="img/diqian.png" >
+						</div>
+						<div class="icontext">hahaha</div>
+					</div>
+					<div class="iconitem">
+						<div class="iconimg">
+							<img src="img/diqian.png" >
+						</div>
+						<div class="icontext">hahaha</div>
+					</div>
+					<div class="iconitem">
+						<div class="iconimg">
+							<img src="img/diqian.png" >
+						</div>
+						<div class="icontext">hahaha</div>
+					</div>
+					<div class="iconitem">
+						<div class="iconimg">
+							<img src="img/diqian.png" >
+						</div>
+						<div class="icontext">hahaha</div>
+					</div>
+					<div class="iconitem">
+						<div class="iconimg">
+							<img src="img/diqian.png" >
+						</div>
+						<div class="icontext">hahaha</div>
+					</div>
+					<div class="iconitem">
+						<div class="iconimg">
+							<img src="img/diqian.png" >
+						</div>
+						<div class="icontext">hahaha</div>
+					</div>
+					<div class="iconitem">
+						<div class="iconimg">
+							<img src="img/diqian.png" >
+						</div>
+						<div class="icontext">hahaha</div>
+					</div>
+				</div>
+				<div class="news">
+					<div class="newsimg1"><img src="img/tt.webp" alt=""></div>
+					<div class="newslist">
+						<div class="swiper-container swiper-container2 swiper-no-swiping">
+								<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="listtop">
+												<div class="top-left">热文</div>
+												<div class="top-right">iPhone XI新图：小刘海，大镜头.价格很贵！</div>
+											</div>
+											<div class="listbottom">
+												<div class="top-left">围观</div>
+												<div class="top-right">公认最耐用的4款车，10万公里无大修sadfasdfas！</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="listtop">
+												<div class="top-left">热文</div>
+												<div class="top-right">iPhone XI新图：小刘海，大镜头.价格很贵！</div>
+											</div>
+											<div class="listbottom">
+												<div class="top-left">围观</div>
+												<div class="top-right">公认最耐用的4款车，10万公里无大修sadfasdfas！</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="listtop">
+												<div class="top-left">热文</div>
+												<div class="top-right">iPhone XI新图：小刘海，大镜头.价格很贵！</div>
+											</div>
+											<div class="listbottom">
+												<div class="top-left">围观</div>
+												<div class="top-right">公认最耐用的4款车，10万公里无大修sadfasdfas！</div>
+											</div>
+										</div>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class="hotsell">
+					<div class="hot-item">
+						<div class="left">
+							<div class="top">
+								<img src="https://gw.alicdn.com/tfs/TB1317ISFXXXXbxXVXXXXXXXXXX-563-78.png_.webp" alt="">
+							</div>
+							<div class="bottom">
+								<img src="//gw.alicdn.com/imgextra/O1CN01O5PKNo1ByS3jSJdQp_!!14-0-lubanu.jpg_100x100q85s150.jpg_.webp" >
+							</div>
+						</div>
+						<div class="right">
+							<img src="//gw.alicdn.com/imgextra/O1CN01eGAkwY1CbNiNGO5G1_!!99-0-lubanu.jpg_200x200q85s150.jpg_.webp" >
+						</div>
+					</div>
+					<div class="hot-item">
+						<div class="left">
+							<div class="top">
+								<img src="https://gw.alicdn.com/tfs/TB1317ISFXXXXbxXVXXXXXXXXXX-563-78.png_.webp" alt="">
+							</div>
+							<div class="bottom">
+								<img src="//gw.alicdn.com/imgextra/O1CN01O5PKNo1ByS3jSJdQp_!!14-0-lubanu.jpg_100x100q85s150.jpg_.webp" >
+							</div>
+						</div>
+						<div class="right">
+							<img src="//gw.alicdn.com/imgextra/O1CN01eGAkwY1CbNiNGO5G1_!!99-0-lubanu.jpg_200x200q85s150.jpg_.webp" >
+						</div>
+					</div>
+					<div class="hot-item">
+						<div class="left">
+							<div class="top">
+								<img src="https://gw.alicdn.com/tfs/TB1317ISFXXXXbxXVXXXXXXXXXX-563-78.png_.webp" alt="">
+							</div>
+							<div class="bottom">
+								<img src="//gw.alicdn.com/imgextra/O1CN01O5PKNo1ByS3jSJdQp_!!14-0-lubanu.jpg_100x100q85s150.jpg_.webp" >
+							</div>
+						</div>
+						<div class="right">
+							<img src="//gw.alicdn.com/imgextra/O1CN01eGAkwY1CbNiNGO5G1_!!99-0-lubanu.jpg_200x200q85s150.jpg_.webp" >
+						</div>
+					</div>
+					<div class="hot-item">
+						<div class="left">
+							<div class="top">
+								<img src="https://gw.alicdn.com/tfs/TB1317ISFXXXXbxXVXXXXXXXXXX-563-78.png_.webp" alt="">
+							</div>
+							<div class="bottom">
+								<img src="//gw.alicdn.com/imgextra/O1CN01O5PKNo1ByS3jSJdQp_!!14-0-lubanu.jpg_100x100q85s150.jpg_.webp" >
+							</div>
+						</div>
+						<div class="right">
+							<img src="//gw.alicdn.com/imgextra/O1CN01eGAkwY1CbNiNGO5G1_!!99-0-lubanu.jpg_200x200q85s150.jpg_.webp" >
+						</div>
+					</div>
+				</div>
+				<div class="live">
+					<div class="live-top">
+						<div class="item-left">
+							<img src="img/淘宝直播.png" alt="">
+							<div class="item">“路转粉”每一秒都在发生</div>
+						</div>
+						<div class="item-right">
+							<img src="img/ball.webp">
+						</div>
+					</div>
+					<div class="live-mid">
+						<div class="item-box"><img src="img/ball.webp"></div>
+						<div class="item-box"><img src="img/ball.webp"></div>
+						<div class="item-box"><img src="img/ball.webp"></div>
+					</div>
+					<div class="live-bottom">
+						<div class="item-left">主播推荐</div>
+						<div class="item-right">品质好货，不能错过的亲民价</div>
+						<div class="leave">抢福利<div class="iconfont icon-youjiantou"></div></div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="item">
+					<div class="iconfont icon-xiazai45"></div>
+					<div class="item-bottom">首页</div>
+				</div>
+				<div class="item">
+					<div class="iconfont icon-gouwuche"></div>
+					<div class="item-bottom">购物车</div>
+				</div>
+				<div class="item">
+					<div class="iconfont icon-dingdanliebiao"></div>
+					<div class="item-bottom">订单列表</div>
+				</div>
+				<div class="item">
+					<div class="iconfont icon-xiazai"></div>
+					<div class="item-bottom">我的淘宝</div>
+				</div>
+				<div class="item">
+					<div class="iconfont icon-gengduo"></div>
+					<div class="item-bottom">更多</div>
+				</div>
+			</div>
 		</div>
 	</body>
+	<script src="node_modules/swiper/dist/js/swiper.js"></script>
+	<script>        
+		var mySwiper = new Swiper ('.swiper-container', {
+			// direction: 'vertical', // 垂直切换选项
+			loop: true, // 循环模式选项
+			autoplay: true,
+			// 如果需要分页器
+			pagination: {
+				el: '.swiper-pagination',
+			},
+			
+			// 如果需要前进后退按钮
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			
+			// 如果需要滚动条
+			scrollbar: {
+				el: '.swiper-scrollbar',
+			},
+		})
+		 
+		 var mySwiper = new Swiper ('.swiper-container2', {
+			direction: 'vertical', // 垂直切换选项
+			loop: true, // 循环模式选项
+			autoplay: true,
+			// 如果需要分页器
+			pagination: {
+				el: '.swiper-pagination',
+			},
+			
+			// 如果需要前进后退按钮
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			
+			// 如果需要滚动条
+			scrollbar: {
+				el: '.swiper-scrollbar',
+			},
+		})
+  </script>
 </html>
