@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		h1{
+			text-align: center;
+		}
+	</style>
+	<body>
+		<h1></h1>
+		<script type="text/javascript">
+			var input = document.querySelector('html')
+			var s = 0
+			var getS
+			var getShuiji = function(){
+				var alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+				var shuiji = parseInt(Math.random()*26)
+				var h1 = document.querySelector('h1')
+				h1.innerHTML = alphabet[shuiji]
+				getS = alphabet[shuiji]
+			}
+			getShuiji()
+			input.onkeydown = function(e){
+				var daxie = e.key.toUpperCase()
+				if(getS == daxie) {
+					getShuiji()
+					s += 10
+				}else{
+					s -= 5
+				}
+			}
+			setTimeout(function(){
+				alert("您的分数是："+s)
+			},10000)
+		</script>
+	</body>
+</html>
