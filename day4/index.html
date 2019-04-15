@@ -10,27 +10,19 @@
 		<script type="text/javascript">
 			var sum
 			var haha = []
-			var newhaha = []
 			var s1 = document.getElementById("item1")
 			for(var i = 1;i<10;i++){
-				for(var j = 1;j<10;j++){
-					if(j>=i){
-						sum = i + "X" + j + "=" + i*j
-						haha.push(sum)
-					}	
+				for(var j = 1;j<=i;j++){
+					sum = j + "X" + i + "=" + i*j
+					haha.push(sum)
 				}
 			}
-			for(var i = 0,j = 9;i<haha.length;i+=j,j--){
+			for(var i = 0,j = 0;i<haha.length;i+=j,j++){
 				var tr = document.createElement('p')
 				var s = haha.slice(i,(i+j))
-				newhaha.push(s)
 				tr.innerHTML = `${s}`
 				document.body.appendChild(tr)
 			}
-// 			newhaha.forEach((value,index) => {
-// 				console.log(value)
-// 			})
-			
 		</script>
 	</body>
 </html>
