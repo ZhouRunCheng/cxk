@@ -1,0 +1,106 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: .16rem;
+}
+
+.header{
+	width: 3.75rem;
+	height: .42rem;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	background-color: rgba(47,47,47,.98);
+}
+
+.header .logo{
+	flex: 1;
+	height: 100%;
+	line-height: .42rem;
+	font-size: .2rem;
+	font-weight: 900;
+	text-align: center;
+	color: #efefef;
+}
+
+.header .add {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
+.header .add input {
+	width: 96%;
+	height: 70%;
+	font-size: .16rem;
+	outline: 0;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.header .iconfont {
+	font-size: .30rem;
+	text-align: center;
+	line-height: .42rem;
+	margin-right: .1rem;
+	color: #efefef;
+}
+
+.unfinish .list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list-item {
+	height: .42rem;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin: .05rem .05rem;
+	border-bottom: 2px solid #454545;
+	border-left: 7px solid #454545;
+	border-top-left-radius: 5px;
+}
+
+.list-item .finished-item {
+	flex: 2;
+	text-align: center;
+	line-height: .42rem;
+	font-size: .30rem;
+	color: rgba(255,47,47,.5);
+}
+
+.list-item .item-content {
+	flex: 8;
+	text-align: center;
+	line-height: .42rem;
+}
+
+.list-item .delete-item {
+	flex: 1;
+	line-height: .42rem;
+	font-size: .24rem;
+}
+
+.item-content input{
+	width: 100%;
+	height: 80%;
+	font-size: .16rem;
+	border: 0;
+	outline: none;
+	padding: 5px;
+	font-weight: 700;
+	color: #454545;
+	background-color: #fff;
+}
+
+.hide{
+	display: none;
+}
